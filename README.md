@@ -23,7 +23,7 @@ A personal repository for managing useful PowerShell scripts. These scripts are 
 ```powershell -ExecutionPolicy Bypass -File /path/to/script.ps1```
 
 ⚠️ **Security Warning:**  
-Using `-ExecutionPolicy Bypass` disables important safety checks. Only do this if you fully understand what the script does and trust its source. Never run unverified scripts—especially those downloaded from the internet—as they may contain malicious code.
+Using `-ExecutionPolicy Bypass` disables important safety checks. **Only do this if you fully understand what the script does and trust its source. Never run unverified scripts—especially those downloaded from the internet—as they may contain malicious code.**
 
 🔒 **Administrator Privileges:**  
 Some scripts may require elevated permissions. If prompted, right-click PowerShell and select “Run as Administrator.”
