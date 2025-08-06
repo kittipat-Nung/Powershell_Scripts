@@ -18,13 +18,18 @@ A personal repository for managing useful PowerShell scripts. These scripts are 
 3. Run the script in PowerShell:
    .\script_name.ps1
 
-**Note:** *To run a powershell Script without fully disabling the protection use:*
+**Note:** If your system blocks script execution due to policy restrictions, you can temporarily bypass it with:
 
-powershell -ExecutionPolicy ByPass -File /path/to/file.ps1
+```powershell -ExecutionPolicy Bypass -File /path/to/script.ps1```
 
-**IMPORTANT:** *Use with caution—bypassing security checks could expose your system to malicious code if you’re not 100% sure of the script's function and it's source.*
+⚠️ **Security Warning:**  
+Using `-ExecutionPolicy Bypass` disables important safety checks. Only do this if you fully understand what the script does and trust its source. Never run unverified scripts—especially those downloaded from the internet—as they may contain malicious code.
 
-> ⚠️ Some scripts may require elevated privileges. Run PowerShell as Administrator if needed.
+🔒 **Administrator Privileges:**  
+Some scripts may require elevated permissions. If prompted, right-click PowerShell and select “Run as Administrator.”
+
+**IMPORTANT:** Running scripts as Administrator gives them full access to your system. Always inspect the script’s contents before executing. If you're unsure what it does, seek expert advice or run it in a safe, isolated environment first.
+
 
 ## 📜 License
 
